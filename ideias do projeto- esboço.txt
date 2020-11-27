@@ -1,0 +1,58 @@
+HOME (GABRIEL)
+- banner médio
+- terá carrosel de 'novidades' de filmes e series e animes (uma prévia do que tem no site)
+- entra no site e tem uma lista de imagens com conteúdo
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+FILMES E SERIES (ALEXANDRE)
+- banner de filmes carrosel médio
+- terá corrosel de filmes (estilo netflix) com filtro de gênero 
+- terá novo menu de nav burger embaixo do banner
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+ANIMES (ALEXANDRE)
+- basicamente a mesma coisa com a página FILMES E SERIES
+- altera as imagens
+- e muda a cor do site para mais 'alegre'
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+MANGAS (ALDO )
+- banner pequeno
+- terá novo menu de nav burger embaixo do banner com filtro de gênero 
+- e-commerce(uma lista) (varias imagens uma ao lado da outra- 5 por linha?ou mais- vai rolando a pagina e vai aparecendo o resto)
+- para compras dos mangas > compra abre pag ou modal? (ainda em debate)
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+
+REGISTRO (JULIANO)
+- formulário simples e modal(login) pra toda as pags que leva ao registro se for falso
+- divisao de telas entre form e uma imagem ao lado
+
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+OBSERVAÇÕES
+
+ - UTILIZAR BOOTSTRAP PRA FICAR MAIS FÁCIL (CSS TBM)
+
+ - IMAGENS ILUISTRATIVAS, SEM API AINDA (ENTREGA DE HTML E CSS A PRIORI)
+
+ - TODAS AS PÁGINAS TERÃO O MESMO CABEÇALHO E RODAPÉ E MENU DE NAVEGAÇÃO ENTRE ELES
+
+ - SERÁ UM SITE QUE AS PESSOAS QUE NÃO TEM REGISTRO ACESSAM 20% DO CONTEÚDO OU MAIS, MAS SABEM...>
+	>...QUE TEM MAIS COISAS NO SITE. PARA ACESSO COMPLETO, REGISTRO NECESSÁRIO
+
+ - CAMILA CIRNE entra no MANGAS ou REGISTRO para ajudar ou revisa códigos ? (ainda precisa de função)
+
+
+<< ! ! ! DÚVIDAS E IDEIAS SLACK (PREFERÊNCIA) OU WHATSAPP ! ! ! >>
