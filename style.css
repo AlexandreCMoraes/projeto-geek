@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #90249e;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    position: relative;
+    display: flex;
+}
+.row {
+    justify-content: space-around;
+    align-items: center;
+}
+#formulario, #image{
+    justify-content: center;
+    align-items: center;
+}
+.img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 10px rgba(221, 62, 241, 0.3);
+}
+.footer {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+    padding:10px 0;
+	background-color: #7f208c;
+    color: white;
+    position: fixed;
+    bottom: 0;
+}
