@@ -1,12 +1,110 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Nerko One', cursive;
 }
+
 body {
-    background-color: #90249e;
+    background-color: #8e249c;
+}
+
+.clear {
+    clear: both;
+}
+
+.ajuste {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+header {
+    padding: 8px 0;
+}
+
+.logo {
+    float: left;
+    margin-left: 13px;
+}
+
+.logo h2 {
+    font-weight: normal;
+    font-size: 25px;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+}
+
+.barras {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+nav.menu-mobile {
+    display: none;
+    float: right;
+}
+
+nav.menu-mobile h2 {
+    cursor: pointer;
+}
+
+nav.menu-mobile ul {
+    display: none;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 999;
+    text-align: center;
+}
+
+nav.menu-mobile li {
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+
+nav.menu-mobile li.selected {
+    background: rgb(225, 225, 225);
+}
+
+nav.menu-mobile a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu-desktop li.selected {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+nav.menu-desktop {
+    float: right;
+    font-size: 18px;
+}
+
+nav.menu-desktop ul {
     position: relative;
-    width: auto;
-    height: auto;
+    top: 7px;
+}
+
+nav.menu-desktop li {
+    padding: 0 20px;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+nav.menu-desktop a {
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu-desktop a:hover {
+    text-decoration: underline;
 }
 
 .container {
@@ -16,27 +114,38 @@ body {
     position: relative;
     display: flex;
 }
+
 .row {
     justify-content: space-around;
     align-items: center;
 }
-#formulario, #image{
+
+#formulario, #image {
     justify-content: center;
     align-items: center;
 }
+
 .img {
     border-radius: 10px;
     box-shadow: 5px 5px 10px 10px rgba(221, 62, 241, 0.3);
 }
+
+/*Footer*/
+
 .footer {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    text-align: center;
-    padding:10px 0;
-	background-color: #7f208c;
+    background: #7f208c;
     color: white;
-    position: fixed;
     bottom: 0;
+    text-align: center;
+    position: fixed;
+}
+
+@media screen and (max-width: 550px) {
+    nav.menu-desktop {
+        display: none;
+    }
+    nav.menu-mobile {
+        display: block;
+    }
 }
