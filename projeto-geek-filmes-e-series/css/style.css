@@ -1,0 +1,345 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nerko One', cursive;
+}
+
+body {
+	background-color: #8e249c;
+}
+
+/*Classes Auxiliares*/
+
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.w60 {
+	width: 60%;
+	float: left;
+}
+
+.w40 {
+	width: 40%;
+	float: left;
+}
+
+.w50 {
+	width: 50%;
+	float: left;
+}
+
+.w33 {
+	float: left;
+	width: 33.3%;
+}
+
+.center {
+	text-align: center;
+}
+
+.clear {
+	clear: both;
+}
+
+/*Classes Home*/
+
+header {
+	padding: 8px 0;
+}
+
+.logo {
+	float: left;
+	margin-left: 13px;
+}
+
+.logo h2 {
+	font-weight: normal;
+	font-size: 25px;
+}
+
+.logo a {
+	color: black;
+	text-decoration: none;
+}
+
+.barras {
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+nav.menu-mobile {
+	display: none;
+	float: right;
+}
+
+nav.menu-mobile h2 {
+	cursor: pointer;
+}
+
+nav.menu-mobile ul {
+	display: none;
+	width: 100%;
+	background: white;
+	position: absolute;
+	left: 0;
+	top: 50px;
+	z-index: 999;
+	text-align: center;
+}
+
+nav.menu-mobile li {
+	padding: 8px 0;
+	border-bottom: 1px solid black;
+}
+
+nav.menu-mobile li.selected {
+	background: rgb(225, 225, 225);
+}
+
+nav.menu-mobile a {
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+
+nav.menu-desktop li.selected {
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+nav.menu-desktop {
+	float: right;
+	font-size: 18px;
+}
+
+nav.menu-desktop ul {
+	position: relative;
+	top: 7px;
+}
+
+nav.menu-desktop li {
+	padding: 0 20px;
+	font-weight: lighter;
+	display: inline-block;
+}
+
+nav.menu-desktop a {
+	color: black;
+	text-decoration: none;
+}
+
+nav.menu-desktop a:hover {
+	text-decoration: underline;
+}
+
+section.main-bg {
+	position: relative;
+	width: 100%;
+	padding: 140px 0 200px 0;
+	background-image: url('../img/bg1.jpg');
+	opacity: 0.8;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+section.main-bg>.container {
+	position: relative;
+	z-index: 2;
+}
+
+.overlay {
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	left: 0;
+	top: 0;
+}
+
+section.main-bg h2 {
+	font-family: 'Nerko One', cursive;
+	color: #8e249c;
+	font-size: 80px;
+	font-weight: normal;
+	
+}
+
+section.main-bg p {
+	font-family: 'Nerko One', cursive;
+	text-align: center;
+	color: white;
+	font-size: 25px;
+	margin-top: 25px;
+}
+
+.face {
+	margin-top: 20px;
+	margin-right: 15px;
+	font-size: 30px;
+}
+
+.insta {
+	margin-top: 20px;
+	font-size: 30px;
+	margin-right: 15px;
+}
+
+.twt {
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+/*Line News*/
+
+.line-text {
+	margin: 5px;
+	position: relative;
+	display: inline-block;
+}
+
+.line-text div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 3px;
+	background: white;
+}
+
+.line-text h2 {
+	color: white;
+	font-weight: normal;
+	font-size: 1.5rem;
+}
+
+/*Noticias*/
+
+.projetos {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.card {
+	width: 15rem;
+	height: 20rem;
+	position: relative;
+	padding: 10px;
+}
+
+.card-img-wrapper {
+	width: 100%;
+	height: 100%;
+	background-color: #262626;
+	border-radius: .9rem;
+}
+
+.card-img-wrapper img {
+	object-fit: cover;
+	opacity: .8;
+	width: 100%;
+	height: 100%;
+	border-radius: .9rem;
+	opacity: .8;
+	transition: opacity .3s;
+}
+
+.card:hover .card-img-wrapper img {
+	opacity: .4;
+}
+
+.card-info {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	bottom: 0;
+	padding: 1rem;
+	text-shadow: 0.3 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
+	transition: all .3s;
+}
+
+.card-info h2 {
+	font-family: 'Nerko One', cursive;
+	font-size: 2rem;
+	font-weight: 500;
+	color: #eee;
+}
+
+.card-info h3 {
+	font-family: 'Nerko One', cursive;
+	font-weight: bolder;
+	color: #ff4081;
+	margin-bottom: 1rem;
+}
+
+.card-info p {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #eee;
+	font-weight: 400;
+	margin-bottom: 1rem;
+}
+
+.card-info button {
+	width: 8rem;
+	height: 2, 5rem;
+	background-color: #6a3093;
+	background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+	background: linear-gradient(to left, #a044ff, #6a3093);
+	font-family: 'Nerko One', cursive;
+	font-size: 1.2rem;
+	color: #eee;
+	border-radius: .5rem;
+	box-shadow: 0 .1rem .8rem rgba(0, 0, 0, .4);
+}
+
+.card:hover .card-info {
+	bottom: 2rem;
+	opacity: 1;
+	visibility: visible;
+}
+
+.button-cards:hover {
+	cursor: pointer;
+}
+
+/*Footer*/
+
+.footer {
+	padding: 10px 0;
+	background: #7f208c;
+	text-align: center;
+	color: white;
+}
+
+/*Media Query*/
+
+@media screen and (max-width: 550px) {
+	nav.menu-desktop {
+		display: none;
+	}
+	nav.menu-mobile {
+		display: block;
+	}
+	.projetos {
+		display: block;
+	}
+	.card {
+		margin: auto;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 551px) and (max-width: 950px) {
+	.projetos {
+		margin: auto;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
