@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Nerko One', cursive;
+    
 }
 
 body {
@@ -25,11 +25,15 @@ header {
 .logo {
     float: left;
     margin-left: 13px;
+    margin-bottom: 0!important;
+    padding-bottom: 0!important;
 }
 
 .logo h2 {
     font-weight: normal;
-    font-size: 25px;
+    font-size: 35px;
+    margin-bottom: 0!important;
+
 }
 
 .logo a {
@@ -84,12 +88,14 @@ nav.menu-desktop li.selected {
 
 nav.menu-desktop {
     float: right;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 nav.menu-desktop ul {
     position: relative;
     top: 7px;
+    margin-bottom: 0!important;
+
 }
 
 nav.menu-desktop li {
@@ -106,14 +112,19 @@ nav.menu-desktop a {
 nav.menu-desktop a:hover {
     text-decoration: underline;
 }
-
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 2%;
-    position: relative;
-    display: flex;
+header {
+	padding: 8px 0;
 }
+.container {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+section.main-bg>.container {
+	position: relative;
+	z-index: 2;
+}
+
 
 .row {
     justify-content: space-around;
@@ -133,11 +144,7 @@ nav.menu-desktop a:hover {
 /*Footer*/
 
 .footer {
-    width: 100%;
-    background: #7f208c;
-    color: white;
     bottom: 0;
-    text-align: center;
     position: fixed;
 }
 

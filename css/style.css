@@ -54,11 +54,15 @@ header {
 .logo {
 	float: left;
 	margin-left: 13px;
+	margin-bottom: 0!important;
+    padding-bottom: 0!important;
 }
 
 .logo h2 {
 	font-weight: normal;
-	font-size: 25px;
+	font-size: 35px;
+	margin-bottom: 0!important;
+
 }
 
 .logo a {
@@ -113,12 +117,14 @@ nav.menu-desktop li.selected {
 
 nav.menu-desktop {
 	float: right;
-	font-size: 18px;
+	font-size: 25px;
 }
 
 nav.menu-desktop ul {
 	position: relative;
 	top: 7px;
+	margin-bottom: 0!important;
+
 }
 
 nav.menu-desktop li {
@@ -137,6 +143,7 @@ nav.menu-desktop a:hover {
 }
 
 section.main-bg {
+	margin-top: 18px;
 	position: relative;
 	width: 100%;
 	padding: 140px 0 200px 0;
@@ -309,11 +316,21 @@ section.main-bg p {
 
 /*Footer*/
 
-.footer {
-	padding: 10px 0;
-	background: #7f208c;
-	text-align: center;
-	color: white;
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: #343a40!important;
+	width: 100%;
+    padding-right: 15px;
+	padding-left: 15px;
+	padding: 1rem;
+    margin-right: auto;
+	margin-left: auto;
+	color: #f8f9fa!important;
+	margin-top:3rem!important;
+	text-align: left;
+    font-weight: bold;
+
 }
 
 /*Media Query*/

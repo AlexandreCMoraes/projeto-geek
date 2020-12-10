@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
 	<meta charset="utf-8">
@@ -12,33 +13,27 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Geek World </title>
 
 </head>
 
 <body>
-	<header>
+	<header style=" padding-bottom: 0; box-shadow: 2px 2px 10px black;">
 		<div class="container">
 			<!--Open Container-->
-			<div class="logo"><a href="index.html">
+			<div class="logo">
+				<a href="index.html">
 					<h2>Geek World</h2>
 				</a></div>
 			<nav class="menu-desktop">
 				<!--Open Menu Desktop-->
 				<ul>
-					<li class="selected">
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="anime.html">Animes</a>
-					</li>
-					<li>
-						<a href="manga.html">Mangás</a>
-					</li>
-					<li>
-						<a href="fale-conosco.html">Contato</a>
-					</li>
+					<li class="selected"><a href="index.html">Home</a></li>
+					<li><a href="anime.html">Animes</a></li>
+					<li><a href="manga.html">Mangás</a></li>
+					<li><a href="fale-conosco.html">Contato</a></li>
 				</ul>
 			</nav>
 			<!--Close Menu Desktop-->
@@ -46,18 +41,10 @@
 				<!--Open Menu-Mobile-->
 				<h2><i class="fas fa-bars barras"></i></h2>
 				<ul>
-					<li class="selected">
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="anime.html">Animes</a>
-					</li>
-					<li>
-						<a href="manga.html">Mangás</a>
-					</li>
-					<li>
-						<a href="fale-conosco.html">Contato</a>
-					</li>
+					<li class="selected"><a href="index.html">Home</a></li>
+					<li><a href="anime.html">Animes</a></li>
+					<li><a href="manga.html">Mangás</a></li>
+					<li><a href="fale-conosco.html">Contato</a></li>
 				</ul>
 			</nav>
 			<!--Close Menu Mobile-->
@@ -87,230 +74,47 @@
 	</section>
 	<!--Close Main Bg-->
 
-
-	<div class="line-text">
+	<!-- titulos dos animes  -->
+	<div class="line-text" style="margin-top: 2%;">
 		<!--recent news-->
 		<div style="width:100px;"></div>
-		<h2>Novos Animes!</h2>
+		<h2>Animes Populares!</h2>
 	</div>
 	<!--Close recent news-->
 
-	<div class="projetos">
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://i.pinimg.com/originals/bf/7b/e2/bf7be23396840d9042b678bba0304b85.jpg" alt="Noticia">
-			</div>
-			<div class="card-info">
-				<h2>Dragon Ball</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
-
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://i.redd.it/bzzelaqwogi31.jpg" alt="">
-			</div>
-			<div class="card-info">
-				<h2>Naruto</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
-
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://images4.alphacoders.com/592/thumb-1920-592538.jpg" alt="">
-			</div>
-			<div class="card-info">
-				<h2>Akame ga Kill</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
-
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://wallpaperaccess.com/full/2409192.jpg" alt="">
-			</div>
-			<div class="card-info">
-				<h2>No Game No Life</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
-
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://picfiles.alphacoders.com/224/thumb-224428.jpg" alt="">
-			</div>
-			<div class="card-info">
-				<h2>Sword Art Online</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
+	<!-- cards dos animes pela api -->
+	<div class="projetos" id="animes-recentes">
+		<!-- aqui ocorre o consumo de api dos cards -->
 	</div>
-	<!--Fecha Div Projetos-->
+
+	<!-- titulos dos animes  -->
+	<div class="line-text" style="margin-top: 2%;">
+		<!--recent news-->
+		<div style="width:100px;"></div>
+		<h2>Animes Atualizados!</h2>
 	</div>
-	<!--Fecha container-->
 
-	<div class="projetos">
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://kawaii-mobile.com/wp-content/uploads/2015/01/Mahouka-Koukou-no-Rettousei-720x1280.jpg"
-					alt="Noticia">
-			</div>
-			<div class="card-info">
-				<h2>The Irregular</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
+	<div class="projetos" id="animes-novos">
 
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://wallpapercave.com/wp/wp6852692.jpg" alt="">
-			</div>
-			<div class="card-info">
-				<h2>The Seven Deadly Sins</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
-
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://cutewallpaper.org/21/danmachi-wallpaper/Danmachi-Movie-Animated-Wallpaper-DanmachiMemoriaFreeze.jpg"
-					alt="">
-			</div>
-			<div class="card-info">
-				<h2>DanMachi</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
-
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://i.pinimg.com/originals/1a/76/a7/1a76a79dcb3d32be9aee8dc4e9f5f73a.jpg" alt="">
-			</div>
-			<div class="card-info">
-				<h2>OnePiece</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
-
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://wallpapersflix.com/wp-content/uploads/2020/08/Death-Note-Wallpaper.jpg" alt="">
-			</div>
-			<div class="card-info">
-				<h2>Death Note</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
 	</div>
 	<!--Fecha Div Projetos-->
 
-	<div class="projetos">
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://cdn.wallpapersafari.com/15/96/7E1Kyn.jpg" alt="Noticia">
-			</div>
-			<div class="card-info">
-				<h2>Fullmetal Alchemist</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
+	<div class="line-text" style="margin-top: 2%;">
+		<!--recent news-->
+		<div style="width:100px;"></div>
+		<h2>Novos Mangás!</h2>
+	</div>
 
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://wallpapercave.com/wp/wp6695712.jpg" alt="">
-			</div>
-			<div class="card-info">
-				<h2>One Punch Man</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
+	<div class="projetos" id="mangas-novos">
 
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://i.pinimg.com/originals/6a/f7/1b/6af71b3ddd53219f72868e726e69f2a2.jpg" alt="">
-			</div>
-			<div class="card-info">
-				<h2>Boruto</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
-
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://wallpapercave.com/wp/wp7897199.jpg" alt="">
-			</div>
-			<div class="card-info">
-				<h2>Jujutsu Kaisen</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
-
-		<div class="card">
-			<div class="card-img-wrapper">
-				<img src="https://www.xtrafondos.com/wallpapers/vertical/my-hero-academia-boku-no-hero-academia-3389.jpg"
-					alt="">
-			</div>
-			<div class="card-info">
-				<h2>Boku no Hero</h2>
-				<h3>Novidades</h3>
-				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio pariatur quisquam nesciunt doloribus
-					cum expedita error?</p>
-				<a href="index.html"><button class="button-cards">Saiba Mais</button></a>
-			</div>
-		</div>
 	</div>
 	<!--Fecha Div Projetos-->
 
-	</section>
-	<!--Close news-->
+	<footer class="mt-5">
+		<div class="container-fluid bg-dark">
 
+			<p style="	font-family: 'Roboto', sans-serif;letter-spacing: 0.04em"class="text-center mt-3 text-light">&copy;Copyright GEEK World</p>
 
-	<footer class="footer">
-		<div class="container">
-			<p>Todos os direitos reservados</p>
 		</div>
 	</footer>
 
@@ -321,10 +125,10 @@
 		integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-		crossorigin="anonymous"></script>
-	<script src="js/function.js">
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
 	</script>
+	<script src="js/function.js"></script>
+	<script src="js/index.js"></script>
 </body>
 
 </html>
