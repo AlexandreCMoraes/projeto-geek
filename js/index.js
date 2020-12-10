@@ -21,7 +21,7 @@ function homeAnimeRecente() {
                             <div class="card-info">
                                 <h2>${anime.title}</h2>
                                 <p>Conheça mais sobre esse grande sucesso clicando no botão abaixo!</p>
-                                <a href="pagina-exemplo.html?anime&${anime.mal_id} " target="blank" style = "text-decoration: none"><button class="button-cards">Saiba Mais</button></a>
+                                <a href="detalhes.html?anime&${anime.mal_id} " target="blank" style = "text-decoration: none"><button class="button-cards">Saiba Mais</button></a>
                             </div>
                         </div>`
                 } else {
@@ -49,7 +49,7 @@ function homeAnimeNovo() {
                             <div class="card-info">
                                 <h2>${anime.title}</h2>
                                 <p>Conheça mais sobre esse grande sucesso clicando no botão abaixo!</p>
-                                <a href="pagina-exemplo.html?anime&${anime.mal_id}" target="blank" style = "text-decoration: none"><button class="button-cards">Saiba Mais</button></a>
+                                <a href="detalhes.html?anime&${anime.mal_id}" target="blank" style = "text-decoration: none"><button class="button-cards">Saiba Mais</button></a>
                             </div>
                         </div>`
                 } else {
@@ -77,7 +77,7 @@ function homeMangaNovo() {
                             <div class="card-info">
                                 <h2>${manga.title}</h2>
                                 <p>Conheça mais sobre esse grande sucesso clicando no botão abaixo!</p>
-                                <a href="pagina-exemplo.html?manga&${manga.mal_id} " target="blank" style = "text-decoration: none"><button class="button-cards">Saiba Mais</button></a>
+                                <a href="detalhes.html?manga&${manga.mal_id} " target="blank" style = "text-decoration: none"><button class="button-cards">Saiba Mais</button></a>
                             </div>
                         </div>`
                 } else {

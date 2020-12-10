@@ -17,7 +17,7 @@ function carregarMangas() {
                         <img src="${manga.image_url}" class="card-img-top" alt="pokemon"  style = "height:60vh; margin-top:2vh; padding-left:3%; padding-right:3%">
                         <div class="card-body d-flex" style="flex-direction: column; justify-content: space-between">
                             <h5 class="card-title text-center">${manga.title}</h5>
-                            <a href="pagina-exemplo.html?manga&${manga.mal_id}" target="blank" style = "text-decoration: none"><button type="button"
+                            <a href="detalhes.html?manga&${manga.mal_id}" target="blank" style = "text-decoration: none"><button type="button"
                                     class="btn btn-block btn-danger">Ver mais</button></a>
                         </div>
                     </div>

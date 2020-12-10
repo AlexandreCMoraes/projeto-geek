@@ -39,4 +39,8 @@ function validaForm(frm) {
         frm.mensagem.focus();
         return false;
     }
+    else{
+        alert("Formulário enviado com sucesso!")
+
+    }
 }

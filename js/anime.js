@@ -18,7 +18,7 @@ function carregarAnimes() {
                     <img src="${anime.image_url}" class="card-img-top" alt="pokemon" style = "height:60vh; margin-top:2vh; padding-left:2%; padding-right:2%">
                     <div class="card-body d-flex" style="flex-direction: column; justify-content: space-between">
                         <h5 class="card-title text-center">${anime.title}</h5>
-                        <a href="pagina-exemplo.html?anime&${anime.mal_id}" target="blank"  style = "text-decoration: none"><button type="button"
+                        <a href="detalhes.html?anime&${anime.mal_id}" target="blank"  style = "text-decoration: none"><button type="button"
                                class="btn btn-danger btn-block">Ver mais</button></a>
                     </div>
                 </div>
