@@ -53,18 +53,21 @@ function carregarMangas() {
                     </span>
                 <!-- TRAILER PARA ALGUNS ANIMES DISPONIVEIS RESPONSIVO -->
                 <div class="row no-gutters">
+                    <div class="col lg-3"></div>
                     <div class="col-lg-6 embed-responsive embed-responsive-16by9 mb-4">
                         <iframe class="embed-responsive-item" src="${res.trailer_url}"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                 
+                    <div class="col lg-3"></div>
                     <!-- PODE SER DESCRIÇÃO OU IMAGENS DE ONDE ASSISTIR, PLATAFORMAS DE STREAMING -->
-                    <div class="col-lg-6">
-                       </a> <p class="ml-5">Saiba mais em :<br> <a href="${res.url}" target="blank" style = " color:black" >${res.url}</a></p>
+                    
+                </div>
+                <div >
+                        <p class="ml-5 ">Saiba mais clicando <a href="${res.url}" target="blank" style = " color:black" >Aqui</a></p>
                     </div>
-                </div>`
+                `
                 
                 rodape.insertAdjacentHTML("afterend",`<footer class="mt-5 container-fluid bg-dark">
                 <div class="row">
